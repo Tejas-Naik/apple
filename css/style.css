@@ -1,0 +1,21 @@
+.header {
+  background-color: #323233;
+  color: #d6d6d6;
+}
+
+nav {
+  margin: 0 auto;
+  width: 80%;
+  height: 4.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #d6d6d6;
+  font-size: 1.2rem;
+}
