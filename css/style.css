@@ -129,3 +129,42 @@ nav {
 .chacha {
   background-color: #e5b400 !important;
 }
+
+/* *************** */
+/* FOOTER SECTION */
+/* *************** */
+
+.section-footer {
+  background-color: #f5f5f7;
+}
+.container-footer {
+  padding: 1.2rem 0;
+  margin: 0 auto;
+  max-width: 100rem;
+}
+.copy-text {
+  font-size: 1.2rem;
+  color: #adadb1;
+  margin-bottom: 1.2rem;
+}
+
+hr {
+  background-color: #adadb1;
+  color: #adadb1;
+}
+
+.footer-text {
+  margin-top: 1.2rem;
+}
+
+footer {
+  padding-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
