@@ -1,3 +1,6 @@
+/***********************/
+/* NAVIGATION */
+/***********************/
 .header {
   background-color: #323233;
   color: #d6d6d6;
@@ -17,5 +20,112 @@ nav {
   display: inline-block;
   text-decoration: none;
   color: #d6d6d6;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #fff;
+}
+
+/***********************/
+/* HERO SECTION */
+/***********************/
+.section-mac-air {
+  position: relative;
+}
+
+.hero {
+  transform: translateX(-80%);
+}
+
+.hero-text-box {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+}
+
+.hero-back-image {
+  position: relative;
+  width: 3508px;
+  height: 724px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/macbook-air.png");
+  overflow: visible;
+}
+
+.links {
+  justify-content: center;
+  display: flex;
+  gap: 2.4rem;
+}
+
+/***********************/
+/* MacBook Pro SECTION */
+/***********************/
+
+.section-mac-pro {
+  position: relative;
+}
+.macbook-pro {
+  transform: translateX(-80%);
+}
+.mac-pro-back-image {
+  position: relative;
+  width: 3508px;
+  height: 724px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/hero-macbook-13.jpg");
+  overflow: visible;
+}
+
+.mac-text-box {
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/***********************/
+/* MacBook Pro SECTION */
+/***********************/
+
+.section-iphone {
+  position: relative;
+}
+
+.iphone {
+  transform: translateX(-80%);
+}
+
+.iphone-back-image {
+  width: 3508px;
+  height: 724px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/iphone.jpg");
+  overflow: visible;
+}
+
+.cards {
+  padding: 0 1.2rem;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.katy {
+  background-color: #1a1a1a !important;
+  line-height: 1.2;
+}
+
+.chacha {
+  background-color: #e5b400 !important;
 }
