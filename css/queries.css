@@ -1,0 +1,64 @@
+/**********************/
+/* BELOW 1200 PX (Landscape Tablets) */
+/**********************/
+@media (max-width: 75rem) {
+  .hero,
+  .macbook-pro,
+  .iphone {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .hero,
+  .macbook-pro,
+  .iphone {
+    transform: translateX(-175%);
+  }
+}
+
+/**********************/
+/* Below 704px (SMALLER TABLETS) */
+/**********************/
+@media (max-width: 44em) {
+  .hero,
+  .macbook-pro,
+  .iphone {
+    transform: translateX(-210%);
+  }
+}
+
+/********************/
+/* Less than 544px (Mobiles phones) */
+/********************/
+@media (max-width: 34em) {
+  .macbook-pro {
+    transform: translateX(-350%);
+  }
+
+  .iphone {
+    transform: translateX(-390%);
+  }
+
+  .hero {
+    transform: translateX(-390%);
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .header {
+  }
+  nav {
+    height: 100%;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+
+  .nav-link:link {
+    font-size: 2.4rem;
+  }
+}
