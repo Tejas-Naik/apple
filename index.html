@@ -17,10 +17,10 @@
 
 <body>
   <header class="header">
+    <a href="#" class="nav-link">
+      <ion-icon name="logo-apple" class="logo"></ion-icon>
+    </a>
     <nav>
-      <a href="#" class="nav-link">
-        <ion-icon name="logo-apple"></ion-icon>
-      </a>
       <a href="#" class="nav-link">Store</a>
       <a href="#" class="nav-link">Mac</a>
       <a href="#" class="nav-link">iPad</a>
@@ -38,6 +38,12 @@
         <ion-icon name="cart-outline"></ion-icon>
       </a>
     </nav>
+      
+<button class="btn-mobile-nav">
+  <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+  <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+</button>
+
   </header>
   <section class="section-mac-air mar-bot-md">
     <div class="hero">
@@ -208,6 +214,14 @@
   <!-- ION Icons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+const headerEl = document.querySelector('.header');
+const mobileBtnEl = document.querySelector('.btn-mobile-nav');
+mobileBtnEl.addEventListener('click', function () {
+  headerEl.classList.toggle('nav-open');
+});
+  </script>
 </body>
 
 </html>

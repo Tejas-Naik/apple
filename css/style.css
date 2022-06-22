@@ -2,6 +2,10 @@
 /* NAVIGATION */
 /***********************/
 .header {
+  padding: 0 8.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #323233;
   color: #d6d6d6;
 }
@@ -27,6 +31,29 @@ nav {
 .nav-link:hover,
 .nav-link:active {
   color: #fff;
+}
+
+.logo {
+  font-size: 2.4rem;
+}
+
+/* Mobile */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 3.6rem;
+  width: 3.6rem;
+  color: #d6d6d6;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /***********************/

@@ -50,15 +50,48 @@
   .grid--2-cols {
     grid-template-columns: 1fr;
   }
+
   .header {
+    justify-content: space-between;
   }
+
   nav {
-    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(50, 50, 51);
+    z-index: 100;
     flex-direction: column;
-    gap: 1.8rem;
+    gap: 3.2rem;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transition: all 0.5s;
+  }
+
+  .nav-open nav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
   }
 
   .nav-link:link {
     font-size: 2.4rem;
+  }
+  /* Mobile nav */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 10000;
   }
 }
